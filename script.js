@@ -4,18 +4,16 @@ const sobreMim = {
     idade: 22,
     estudante:true
 }
-console.log(sobreMim)
+
 
 // Adicione uma nova propriedade sem alterar seu objeto inicial.
 sobreMim.tecnologia = "HTML"
-console.log(sobreMim)
+
 // Remova uma propriedade desse objeto.
 delete sobreMim.estudante
-console.log(sobreMim)
+
 //Mostre no console todas as propriedades desse objeto.
-console.log(sobreMim.nome)
-console.log(sobreMim.idade)
-console.log(sobreMim.tecnologia)
+console.log(sobreMim)
 // Crie um array  chamado "cadastro" contendo ao menos 5 objetos. 
 //Cada objeto deve receber as seguintes propriedades: nome,  idade,  telefone, amigos. 
 //Na propriedade amigos, adicione ao menos 4 itens.
@@ -57,3 +55,7 @@ let cadastro = [ {
 }]
 console.log(cadastro[0].amigos[1],cadastro[1].amigos[1],cadastro[2].amigos[1],cadastro[3].amigos[1],cadastro[4].amigos[1])
 
+for(let i = 0; i < cadastro.length; i++){;
+    let f = Math.floor(Math.random()*4)
+    console.log(`${cadastro[i].nome} possui umx amigx que se chama ${cadastro[i].amigos[f]}`);
+}
